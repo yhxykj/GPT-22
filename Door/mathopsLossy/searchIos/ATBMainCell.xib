@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="cmM-Yl-Cnq" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="mKW-rT-xnI" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kdM-o0-a2E" customClass="ATBMainCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatNormal" translatesAutoresizingMaskIntoConstraints="NO" id="gDn-00-iUG">
+                        <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83u-CQ-42L">
+                        <rect key="frame" x="22" y="588" width="344" height="88"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="87.99" id="1rE-Yl-d4v"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="closeSelect"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="pVp-ms-vA9"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="83u-CQ-42L" secondAttribute="trailing" constant="21.97" id="sVr-BX-Usl"/>
+                <constraint firstAttribute="bottom" secondItem="83u-CQ-42L" secondAttribute="bottom" constant="35.97" id="iKt-t7-wmn"/>
+                <constraint firstItem="gDn-00-iUG" firstAttribute="top" secondItem="kdM-o0-a2E" secondAttribute="top" id="oK3-bE-kfl"/>
+                <constraint firstItem="83u-CQ-42L" firstAttribute="centerX" secondItem="kdM-o0-a2E" secondAttribute="centerX" id="S4Q-lS-aLc"/>
+                <constraint firstItem="83u-CQ-42L" firstAttribute="leading" secondItem="kdM-o0-a2E" secondAttribute="leading" constant="22.01" id="GKe-mb-nEs"/>
+                <constraint firstAttribute="trailing" secondItem="gDn-00-iUG" secondAttribute="trailing" id="XcS-n5-9VY"/>
+                <constraint firstItem="gDn-00-iUG" firstAttribute="leading" secondItem="kdM-o0-a2E" secondAttribute="leading" id="aC1-5t-xqI"/>
+                <constraint firstAttribute="bottom" secondItem="gDn-00-iUG" secondAttribute="bottom" id="bdN-Wa-myJ"/>
+            </constraints>
+            <size key="customSize" width="388" height="712"/>
+            <connections>
+                <outlet property="Icon" destination="gDn-00-iUG" id="6KA-1c-zK4"/>
+                <outlet property="button" destination="83u-CQ-42L" id="CSs-LI-4pB"/>
+            </connections>
+            <point key="canvasLocation" x="219.84732824427479" y="36.619718309859159"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="chatNormal" width="390" height="844"/>
+        <image name="closeSelect" width="332" height="54"/>
+    </resources>
+</document>

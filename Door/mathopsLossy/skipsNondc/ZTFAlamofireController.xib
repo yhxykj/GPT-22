@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="cmM-Yl-Cnq" userLabel="File's Owner" customClass="KMCardController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="pZV-GB-uxh" id="t9m-NX-LyR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="mKW-rT-xnI" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="pZV-GB-uxh">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="modityBottom" translatesAutoresizingMaskIntoConstraints="NO" id="BiK-g4-UXu">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUw-MS-IRm">
+                    <rect key="frame" x="46" y="744" width="301" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="ableSelectLijiqianjin"/>
+                    <connections>
+                        <action selector="_nextClick" destination="cmM-Yl-Cnq" eventType="touchUpInside" id="Rel-TI-CUC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9m-Bi-oep">
+                    <rect key="frame" x="10" y="59" width="55" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="54.99" id="WC2-rc-aLu"/>
+                        <constraint firstAttribute="height" constant="43.96" id="05S-7y-10N"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="tianjiatupianRecordCreate"/>
+                    <connections>
+                        <action selector="_dissmiss:" destination="cmM-Yl-Cnq" eventType="touchUpInside" id="Txh-m4-39Z"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="4KS-xV-aw8"/>
+            <color key="backgroundColor" red="0.094117647060000004" green="0.10980392160000001" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="A9m-Bi-oep" firstAttribute="leading" secondItem="4KS-xV-aw8" secondAttribute="leading" constant="10.02" id="2bH-9Y-HFh"/>
+                <constraint firstItem="4KS-xV-aw8" firstAttribute="trailing" secondItem="YUw-MS-IRm" secondAttribute="trailing" constant="46.02" id="3wx-ch-6uQ"/>
+                <constraint firstItem="A9m-Bi-oep" firstAttribute="top" secondItem="4KS-xV-aw8" secondAttribute="top" id="IUz-7G-UD9"/>
+                <constraint firstItem="4KS-xV-aw8" firstAttribute="trailing" secondItem="BiK-g4-UXu" secondAttribute="trailing" id="CTB-MR-NVa"/>
+                <constraint firstAttribute="bottom" secondItem="BiK-g4-UXu" secondAttribute="bottom" id="W4G-yM-GgI"/>
+                <constraint firstItem="BiK-g4-UXu" firstAttribute="top" secondItem="pZV-GB-uxh" secondAttribute="top" id="GJu-97-Ke6"/>
+                <constraint firstItem="YUw-MS-IRm" firstAttribute="leading" secondItem="4KS-xV-aw8" secondAttribute="leading" constant="46.02" id="QzI-nv-QHu"/>
+                <constraint firstItem="BiK-g4-UXu" firstAttribute="leading" secondItem="4KS-xV-aw8" secondAttribute="leading" id="JtA-ZB-fXf"/>
+                <constraint firstItem="4KS-xV-aw8" firstAttribute="bottom" secondItem="YUw-MS-IRm" secondAttribute="bottom" constant="19.98" id="VXE-5L-pdR"/>
+            </constraints>
+            <point key="canvasLocation" x="91" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="modityBottom" width="390" height="844"/>
+        <image name="ableSelectLijiqianjin" width="298" height="54"/>
+        <image name="tianjiatupianRecordCreate" width="24" height="24"/>
+    </resources>
+</document>
