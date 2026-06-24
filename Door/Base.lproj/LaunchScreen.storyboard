@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ux5-tr-FvZ">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="glx-t4-u1v">
+            <objects>
+                <viewController id="Ux5-tr-FvZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SGz-8D-4fC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="bufferSpeedsRing" translatesAutoresizingMaskIntoConstraints="NO" id="zeS-75-KGV">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xeq-Yn-Hhj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zeS-75-KGV" firstAttribute="top" secondItem="SGz-8D-4fC" secondAttribute="top" id="dWG-2d-sBu"/>
+                            <constraint firstAttribute="bottom" secondItem="zeS-75-KGV" secondAttribute="bottom" id="3Lq-PZ-kpV"/>
+                            <constraint firstAttribute="trailing" secondItem="zeS-75-KGV" secondAttribute="trailing" id="8oz-DJ-IwL"/>
+                            <constraint firstItem="zeS-75-KGV" firstAttribute="leading" secondItem="SGz-8D-4fC" secondAttribute="leading" id="OdE-92-W3E"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2yO-rE-hKI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bufferSpeedsRing" width="390" height="844"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

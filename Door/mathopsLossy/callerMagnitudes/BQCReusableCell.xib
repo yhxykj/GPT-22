@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="cmM-Yl-Cnq" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="mKW-rT-xnI" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kdM-o0-a2E" customClass="BQCReusableCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="117" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="117" height="130"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z35-3u-FiW">
+                        <rect key="frame" x="38.666666666666664" y="10" width="39.999999999999993" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40.01" id="BCw-me-7mW"/>
+                            <constraint firstAttribute="width" constant="40.01" id="GjY-ic-I5T"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBo-Sh-T9Q">
+                        <rect key="frame" x="5" y="54" width="107" height="14.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="pVp-ms-vA9"/>
+            <constraints>
+                <constraint firstItem="IBo-Sh-T9Q" firstAttribute="leading" secondItem="kdM-o0-a2E" secondAttribute="leading" constant="4.99" id="wv6-C3-c6S"/>
+                <constraint firstItem="z35-3u-FiW" firstAttribute="centerX" secondItem="kdM-o0-a2E" secondAttribute="centerX" id="mYi-7r-5mN"/>
+                <constraint firstAttribute="trailing" secondItem="IBo-Sh-T9Q" secondAttribute="trailing" constant="5.02" id="Z29-5f-1ii"/>
+                <constraint firstItem="IBo-Sh-T9Q" firstAttribute="top" secondItem="z35-3u-FiW" secondAttribute="bottom" constant="3.99" id="4oS-iw-ZKU"/>
+                <constraint firstItem="z35-3u-FiW" firstAttribute="top" secondItem="kdM-o0-a2E" secondAttribute="top" constant="10.02" id="bRi-dO-Gny"/>
+            </constraints>
+            <size key="customSize" width="117" height="130"/>
+            <connections>
+                <outlet property="YYImage" destination="z35-3u-FiW" id="UOn-0q-exK"/>
+                <outlet property="YYlabel" destination="IBo-Sh-T9Q" id="J2d-Kh-Azj"/>
+            </connections>
+            <point key="canvasLocation" x="182.30769230769229" y="16.350710900473931"/>
+        </collectionViewCell>
+    </objects>
+</document>
