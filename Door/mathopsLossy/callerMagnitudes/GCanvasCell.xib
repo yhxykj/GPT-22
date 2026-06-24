@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="cmM-Yl-Cnq" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="mKW-rT-xnI" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kdM-o0-a2E" customClass="GCanvasCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="191" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="191" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcb-7b-Fdq">
+                        <rect key="frame" x="24" y="25.666666666666671" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="startBasic" translatesAutoresizingMaskIntoConstraints="NO" id="Cox-To-Inf">
+                        <rect key="frame" x="126" y="29.666666666666671" width="53" height="13"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="pVp-ms-vA9"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Cox-To-Inf" secondAttribute="trailing" constant="12.03" id="9ki-3W-HLk"/>
+                <constraint firstItem="Cox-To-Inf" firstAttribute="centerY" secondItem="kdM-o0-a2E" secondAttribute="centerY" id="3w5-yx-1YN"/>
+                <constraint firstItem="kcb-7b-Fdq" firstAttribute="leading" secondItem="kdM-o0-a2E" secondAttribute="leading" constant="24.01" id="RCI-lJ-IJK"/>
+                <constraint firstItem="kcb-7b-Fdq" firstAttribute="centerY" secondItem="kdM-o0-a2E" secondAttribute="centerY" id="FYu-Cl-Ufp"/>
+            </constraints>
+            <size key="customSize" width="191" height="72"/>
+            <connections>
+                <outlet property="icon" destination="Cox-To-Inf" id="Clj-ny-7Ya"/>
+                <outlet property="label" destination="kcb-7b-Fdq" id="i2c-9m-qdZ"/>
+            </connections>
+            <point key="canvasLocation" x="235.87786259541983" y="-4.9295774647887329"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="startBasic" width="53" height="13"/>
+    </resources>
+</document>

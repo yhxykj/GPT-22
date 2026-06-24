@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="cmM-Yl-Cnq" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="mKW-rT-xnI" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pmh-72-QWT" customClass="PLaunchCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pmh-72-QWT" id="36Z-KF-TxP">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="320"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phoneViiewCanvas" translatesAutoresizingMaskIntoConstraints="NO" id="bPw-1f-Nvl">
+                        <rect key="frame" x="16" y="32" width="26" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25.99" id="5av-j2-bBX"/>
+                            <constraint firstAttribute="width" constant="25.95" id="gAA-Wx-2um"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfO-AN-S7o">
+                        <rect key="frame" x="16" y="117" width="333" height="48"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="click:" destination="pmh-72-QWT" eventType="touchUpInside" id="mCr-Zb-h4P"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rWy-Me-YwT">
+                        <rect key="frame" x="16" y="181" width="333" height="47"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="click:" destination="pmh-72-QWT" eventType="touchUpInside" id="zpE-CE-JMo"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHH-hC-Lk5">
+                        <rect key="frame" x="16" y="245" width="337" height="47"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="click:" destination="pmh-72-QWT" eventType="touchUpInside" id="L3H-IQ-ytI"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="screenType_i" translatesAutoresizingMaskIntoConstraints="NO" id="vwg-48-0mR">
+                        <rect key="frame" x="16" y="58" width="337" height="257"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="257.03" id="eBn-C2-h33"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="vwg-48-0mR" secondAttribute="bottom" constant="5.01" id="w24-gE-0oJ"/>
+                    <constraint firstItem="bPw-1f-Nvl" firstAttribute="top" secondItem="36Z-KF-TxP" secondAttribute="top" constant="32.01" id="ZIp-G5-9Hz"/>
+                    <constraint firstItem="vwg-48-0mR" firstAttribute="top" secondItem="bPw-1f-Nvl" secondAttribute="bottom" id="UE3-2H-xiG"/>
+                    <constraint firstAttribute="trailing" secondItem="vwg-48-0mR" secondAttribute="trailing" constant="16.02" id="u2t-69-iQa"/>
+                    <constraint firstItem="vwg-48-0mR" firstAttribute="leading" secondItem="36Z-KF-TxP" secondAttribute="leading" constant="16.02" id="QwH-qN-aER"/>
+                    <constraint firstItem="bPw-1f-Nvl" firstAttribute="leading" secondItem="36Z-KF-TxP" secondAttribute="leading" constant="15.99" id="cFc-N0-Kn6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="W4o-kt-oEN"/>
+            <point key="canvasLocation" x="139.23076923076923" y="-44.075829383886251"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="phoneViiewCanvas" width="26" height="26"/>
+        <image name="screenType_i" width="358" height="223"/>
+    </resources>
+</document>

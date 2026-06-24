@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="cmM-Yl-Cnq" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="mKW-rT-xnI" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kdM-o0-a2E" customClass="XDLoadingCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="113" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="113" height="103"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="socketDefault_b4Whiteback" translatesAutoresizingMaskIntoConstraints="NO" id="wjb-ZT-qce">
+                        <rect key="frame" x="0.0" y="0.0" width="113" height="103"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cjw-ag-A8v">
+                        <rect key="frame" x="4" y="4" width="105" height="95"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="pVp-ms-vA9"/>
+            <constraints>
+                <constraint firstItem="Cjw-ag-A8v" firstAttribute="leading" secondItem="kdM-o0-a2E" secondAttribute="leading" constant="4.02" id="Uem-eL-y2f"/>
+                <constraint firstItem="Cjw-ag-A8v" firstAttribute="top" secondItem="kdM-o0-a2E" secondAttribute="top" constant="4.03" id="YDb-Kv-tZt"/>
+                <constraint firstAttribute="bottom" secondItem="Cjw-ag-A8v" secondAttribute="bottom" constant="3.99" id="JkE-bJ-acj"/>
+                <constraint firstAttribute="trailing" secondItem="wjb-ZT-qce" secondAttribute="trailing" id="15o-yi-iRN"/>
+                <constraint firstAttribute="bottom" secondItem="wjb-ZT-qce" secondAttribute="bottom" id="bKW-61-8TK"/>
+                <constraint firstAttribute="trailing" secondItem="Cjw-ag-A8v" secondAttribute="trailing" constant="4.02" id="vt2-3d-mtH"/>
+                <constraint firstItem="wjb-ZT-qce" firstAttribute="top" secondItem="kdM-o0-a2E" secondAttribute="top" id="c4o-KC-KA6"/>
+                <constraint firstItem="wjb-ZT-qce" firstAttribute="leading" secondItem="kdM-o0-a2E" secondAttribute="leading" id="0zC-zo-jpM"/>
+            </constraints>
+            <size key="customSize" width="113" height="103"/>
+            <connections>
+                <outlet property="Icon" destination="Cjw-ag-A8v" id="4f6-tF-quV"/>
+                <outlet property="bgImage" destination="wjb-ZT-qce" id="5E8-Yc-CfL"/>
+            </connections>
+            <point key="canvasLocation" x="179.23076923076923" y="6.7535545023696679"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="socketDefault_b4Whiteback" width="60" height="60"/>
+    </resources>
+</document>

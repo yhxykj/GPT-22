@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="cmM-Yl-Cnq" userLabel="File's Owner" customClass="MLRAudioController" customModule="Door" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="x5z-2m-4o8" id="Car-4M-g5O"/>
+                <outlet property="tableView" destination="Jaj-Gw-RbR" id="hYx-h0-0aw"/>
+                <outlet property="titleView" destination="SKr-88-yli" id="2pB-40-Oby"/>
+                <outlet property="view" destination="pZV-GB-uxh" id="t9m-NX-LyR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="mKW-rT-xnI" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="pZV-GB-uxh">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ydownChuangResponse" translatesAutoresizingMaskIntoConstraints="NO" id="nW8-T1-su8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                </imageView>
+                <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="x5z-2m-4o8">
+                    <rect key="frame" x="0.0" y="150" width="375" height="662"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bDx-tc-pt7">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创作" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3e-XH-rLo">
+                    <rect key="frame" x="20" y="50" width="41" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43.969999999999999" id="RLU-Bk-jc4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKr-88-yli">
+                    <rect key="frame" x="0.0" y="100" width="375" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44.990000000000002" id="iQJ-QG-IX6"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jaj-Gw-RbR">
+                    <rect key="frame" x="0.0" y="151" width="375" height="627"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="cmM-Yl-Cnq" id="PhV-z9-zMm"/>
+                        <outlet property="delegate" destination="cmM-Yl-Cnq" id="dv2-fM-hbD"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="jpQ-A1-S1x"/>
+            <constraints>
+                <constraint firstItem="jpQ-A1-S1x" firstAttribute="trailing" secondItem="nW8-T1-su8" secondAttribute="trailing" id="0W2-2R-ONa"/>
+                <constraint firstAttribute="bottom" secondItem="nW8-T1-su8" secondAttribute="bottom" id="0dx-bO-crn"/>
+                <constraint firstItem="nW8-T1-su8" firstAttribute="leading" secondItem="jpQ-A1-S1x" secondAttribute="leading" id="5SZ-el-FKf"/>
+                <constraint firstItem="c3e-XH-rLo" firstAttribute="top" secondItem="jpQ-A1-S1x" secondAttribute="top" id="Gyb-Og-Yeh"/>
+                <constraint firstItem="nW8-T1-su8" firstAttribute="top" secondItem="pZV-GB-uxh" secondAttribute="top" id="H9r-d0-Smj"/>
+                <constraint firstItem="jpQ-A1-S1x" firstAttribute="trailing" secondItem="SKr-88-yli" secondAttribute="trailing" id="RK2-EQ-fbi"/>
+                <constraint firstItem="jpQ-A1-S1x" firstAttribute="bottom" secondItem="Jaj-Gw-RbR" secondAttribute="bottom" id="RmE-aN-hBC"/>
+                <constraint firstItem="jpQ-A1-S1x" firstAttribute="trailing" secondItem="x5z-2m-4o8" secondAttribute="trailing" id="aFQ-FZ-Had"/>
+                <constraint firstItem="Jaj-Gw-RbR" firstAttribute="top" secondItem="SKr-88-yli" secondAttribute="bottom" constant="5.9900000000000002" id="aXG-9T-3re"/>
+                <constraint firstItem="x5z-2m-4o8" firstAttribute="top" secondItem="SKr-88-yli" secondAttribute="bottom" constant="4.9500000000000002" id="cIq-em-cYG"/>
+                <constraint firstItem="SKr-88-yli" firstAttribute="top" secondItem="c3e-XH-rLo" secondAttribute="bottom" constant="5.9800000000000004" id="ctU-Wj-Jc0"/>
+                <constraint firstItem="c3e-XH-rLo" firstAttribute="leading" secondItem="jpQ-A1-S1x" secondAttribute="leading" constant="20.010000000000002" id="dt8-hC-hUm"/>
+                <constraint firstItem="jpQ-A1-S1x" firstAttribute="trailing" secondItem="Jaj-Gw-RbR" secondAttribute="trailing" id="e3y-39-KJV"/>
+                <constraint firstItem="x5z-2m-4o8" firstAttribute="leading" secondItem="jpQ-A1-S1x" secondAttribute="leading" id="e8V-tX-Qox"/>
+                <constraint firstItem="Jaj-Gw-RbR" firstAttribute="leading" secondItem="jpQ-A1-S1x" secondAttribute="leading" id="jTC-Mb-A3S"/>
+                <constraint firstAttribute="bottom" secondItem="x5z-2m-4o8" secondAttribute="bottom" id="vFb-xc-iWm"/>
+                <constraint firstItem="SKr-88-yli" firstAttribute="leading" secondItem="jpQ-A1-S1x" secondAttribute="leading" id="yMg-93-sau"/>
+            </constraints>
+            <point key="canvasLocation" x="128.80000000000001" y="-11.083743842364532"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ydownChuangResponse" width="390" height="844"/>
+    </resources>
+</document>

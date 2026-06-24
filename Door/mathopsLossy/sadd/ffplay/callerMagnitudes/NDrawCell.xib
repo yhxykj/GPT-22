@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="cmM-Yl-Cnq" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="mKW-rT-xnI" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kdM-o0-a2E" customClass="NDrawCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="75"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1af-if-3jy">
+                        <rect key="frame" x="15" y="7.6666666666666643" width="353" height="59.999999999999993"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uGH-RC-pW8">
+                                <rect key="frame" x="304" y="15.333333333333332" width="44" height="28.999999999999996"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43.99" id="DTk-lc-OXm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="清空">
+                                    <color key="titleColor" red="0.41960784313725491" green="0.6705882352941176" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clean:" destination="kdM-o0-a2E" eventType="touchUpInside" id="o60-yx-TQX"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ht-gK-9yD">
+                                <rect key="frame" x="21" y="20.666666666666664" width="268" height="18.666666666666664"/>
+                                <string key="placeholder">在一个阳光明媚的早晨，我走进了一家咖啡馆。咖啡馆里弥漫着浓郁的咖啡香气，让人感到舒适和放松。我点了一杯拿铁咖啡，坐在靠窗的位置上。
+
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.97254901960784312" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="uGH-RC-pW8" firstAttribute="centerY" secondItem="1af-if-3jy" secondAttribute="centerY" id="LZe-0Y-22h"/>
+                            <constraint firstAttribute="height" constant="60.01" id="dq0-uN-FqJ"/>
+                            <constraint firstItem="0ht-gK-9yD" firstAttribute="leading" secondItem="1af-if-3jy" secondAttribute="leading" constant="20.99" id="anc-Pg-f90"/>
+                            <constraint firstItem="0ht-gK-9yD" firstAttribute="centerY" secondItem="1af-if-3jy" secondAttribute="centerY" id="hiJ-FS-jv0"/>
+                            <constraint firstItem="uGH-RC-pW8" firstAttribute="leading" secondItem="0ht-gK-9yD" secondAttribute="trailing" constant="15.01" id="RTa-zq-uQI"/>
+                            <constraint firstAttribute="trailing" secondItem="uGH-RC-pW8" secondAttribute="trailing" constant="5.02" id="Zn1-zA-OA7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="pVp-ms-vA9"/>
+            <constraints>
+                <constraint firstItem="1af-if-3jy" firstAttribute="centerY" secondItem="kdM-o0-a2E" secondAttribute="centerY" id="uvH-Rp-EMG"/>
+                <constraint firstItem="1af-if-3jy" firstAttribute="leading" secondItem="kdM-o0-a2E" secondAttribute="leading" constant="15.02" id="061-n1-sZ0"/>
+                <constraint firstAttribute="trailing" secondItem="1af-if-3jy" secondAttribute="trailing" constant="14.99" id="ecM-sM-sHr"/>
+            </constraints>
+            <size key="customSize" width="383" height="75"/>
+            <connections>
+                <outlet property="textTF" destination="0ht-gK-9yD" id="hXL-pI-k6f"/>
+            </connections>
+            <point key="canvasLocation" x="314.61538461538458" y="mKW-rT-xnI.4881516587677726"/>
+        </collectionViewCell>
+    </objects>
+</document>

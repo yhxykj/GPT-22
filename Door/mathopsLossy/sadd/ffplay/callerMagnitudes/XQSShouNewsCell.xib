@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="cmM-Yl-Cnq" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="mKW-rT-xnI" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kdM-o0-a2E" customClass="XQSShouNewsCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOZ-6h-8RJ">
+                        <rect key="frame" x="15" y="42.666666666666657" width="313" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8r-XB-3ib">
+                                <rect key="frame" x="21" y="30.000000000000007" width="233" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfk-iC-5Kk">
+                                <rect key="frame" x="269" y="19" width="44" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43.99" id="lcw-ot-GiE"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="iconVoiceEveant"/>
+                                <connections>
+                                    <action selector="down:" destination="kdM-o0-a2E" eventType="touchUpInside" id="San-9V-j3L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.97254901960784312" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="c8r-XB-3ib" firstAttribute="centerY" secondItem="ZOZ-6h-8RJ" secondAttribute="centerY" id="b8M-b7-XMe"/>
+                            <constraint firstItem="Tfk-iC-5Kk" firstAttribute="leading" secondItem="c8r-XB-3ib" secondAttribute="trailing" constant="14.97" id="v7I-ZR-DWT"/>
+                            <constraint firstItem="Tfk-iC-5Kk" firstAttribute="centerY" secondItem="ZOZ-6h-8RJ" secondAttribute="centerY" id="zHG-Vc-1Hp"/>
+                            <constraint firstAttribute="trailing" secondItem="Tfk-iC-5Kk" secondAttribute="trailing" id="YQS-H1-uys"/>
+                            <constraint firstAttribute="height" constant="59.98" id="VQt-tL-Zxu"/>
+                            <constraint firstItem="c8r-XB-3ib" firstAttribute="leading" secondItem="ZOZ-6h-8RJ" secondAttribute="leading" constant="20.99" id="TZF-NR-MUq"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="pVp-ms-vA9"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ZOZ-6h-8RJ" secondAttribute="trailing" constant="15.03" id="aTu-vg-XNs"/>
+                <constraint firstItem="ZOZ-6h-8RJ" firstAttribute="leading" secondItem="kdM-o0-a2E" secondAttribute="leading" constant="15.02" id="3N5-of-2Ky"/>
+                <constraint firstItem="ZOZ-6h-8RJ" firstAttribute="centerY" secondItem="kdM-o0-a2E" secondAttribute="centerY" id="KW7-iv-VQY"/>
+            </constraints>
+            <size key="customSize" width="343" height="145"/>
+            <connections>
+                <outlet property="labeel" destination="c8r-XB-3ib" id="2m5-zh-Kry"/>
+            </connections>
+            <point key="canvasLocation" x="254.61538461538461" y="-39.454976303317537"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="iconVoiceEveant" width="15" height="8"/>
+    </resources>
+</document>
